@@ -41,7 +41,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    ENV.apiHost = 'https://first-word-api.herokuapp.com/';
+    ENV.apiHost = 'https://first-word-api.herokuapp.com';
   }
 
   return ENV;
