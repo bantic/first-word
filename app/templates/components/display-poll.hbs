@@ -1,0 +1,5 @@
+<h2>Lauren's Poll: {{poll.title}}</h2>
+
+{{#each poll.pollItems as |pollItem|}}
+  {{display-poll-item pollItem=pollItem}}
+{{/each}}

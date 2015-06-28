@@ -1,0 +1,10 @@
+<div class="poll-item">
+  <h3>{{pollItem.title}}</h3>
+  <img src={{pollItem.photo.imageUrl}}>
+
+  {{input-word pollItem=pollItem afterInput=(action 'showWords')}}
+
+  {{#if isShowingWords}}
+    {{word-list pollItem=pollItem}}
+  {{/if}}
+</div>
